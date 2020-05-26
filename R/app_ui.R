@@ -8,7 +8,7 @@ app_ui <- function(request) {
   tagList(
     golem_add_external_resources(),
     shinydashboard::dashboardPage(
-      shinydashboard::dashboardHeader(title = "Toronto Open Data Explorer",
+      shinydashboard::dashboardHeader(title = "Open Data Toronto Explorer",
                                       titleWidth = 300
       ),
       shinydashboard::dashboardSidebar(width = 300,
@@ -47,7 +47,7 @@ golem_add_external_resources <- function(){
     favicon(ext = "png"),
     bundle_resources(
       path = app_sys('app/www'),
-      app_title = 'Toronto Open Data Explorer'
+      app_title = 'Open Data Toronto Explorer'
     )
   )
 }

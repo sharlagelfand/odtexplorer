@@ -1,4 +1,4 @@
-Package: todexplorer
+Package: odtexplorer
 Title: Toronto Open Data Explorer
 Version: 0.0.0.9000
 Authors@R: person('Sharla', 'Gelfand', email = 'sharla.gelfand@gmail.com', role = c('cre', 'aut'))
