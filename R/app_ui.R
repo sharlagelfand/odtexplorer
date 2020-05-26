@@ -47,7 +47,7 @@ golem_add_external_resources <- function(){
     favicon(ext = "png"),
     bundle_resources(
       path = app_sys('app/www'),
-      app_title = 'todexplorer'
+      app_title = 'Toronto Open Data Explorer'
     )
   )
 }
