@@ -22,7 +22,7 @@ app_ui <- function(request) {
         tabItems(
           mod_explore_ui("explore"),
           mod_metrics_ui("metrics"),
-          tabItem("about")
+          mod_about_ui("about")
         )
 
     )

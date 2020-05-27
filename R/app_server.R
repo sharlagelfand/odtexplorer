@@ -6,4 +6,5 @@
 app_server <- function( input, output, session ) {
   callModule(mod_explore_server, "explore")
   callModule(mod_metrics_server, "metrics")
+  callModule(mod_about_server, "about")
 }
