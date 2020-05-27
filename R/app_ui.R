@@ -8,6 +8,7 @@ app_ui <- function(request) {
   tagList(
     golem_add_external_resources(),
     shinydashboard::dashboardPage(
+      skin = "black",
       shinydashboard::dashboardHeader(
         title = "Open Data Toronto Explorer",
         titleWidth = 300
