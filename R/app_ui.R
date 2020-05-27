@@ -8,10 +8,12 @@ app_ui <- function(request) {
   tagList(
     golem_add_external_resources(),
     shinydashboard::dashboardPage(
-      shinydashboard::dashboardHeader(title = "Open Data Toronto Explorer",
-                                      titleWidth = 300
+      shinydashboard::dashboardHeader(
+        title = "Open Data Toronto Explorer",
+        titleWidth = 300
       ),
-      shinydashboard::dashboardSidebar(width = 300,
+      shinydashboard::dashboardSidebar(
+        width = 300,
         shinydashboard::sidebarMenu(
           menuItem("Explore Available Data", tabName = "explore", icon = icon("search")),
           menuItem("Portal Metrics", tabName = "metrics", icon = icon("chart-bar")),
@@ -24,9 +26,8 @@ app_ui <- function(request) {
           mod_metrics_ui("metrics"),
           mod_about_ui("about")
         )
-
+      )
     )
-  )
   )
 }
 #' Add external Resources to the Application
@@ -37,17 +38,16 @@ app_ui <- function(request) {
 #' @import shiny
 #' @importFrom golem add_resource_path activate_js favicon bundle_resources
 #' @noRd
-golem_add_external_resources <- function(){
-
+golem_add_external_resources <- function() {
   add_resource_path(
-    'www', app_sys('app/www')
+    "www", app_sys("app/www")
   )
 
   tags$head(
     favicon(ext = "png"),
     bundle_resources(
-      path = app_sys('app/www'),
-      app_title = 'Open Data Toronto Explorer'
+      path = app_sys("app/www"),
+      app_title = "Open Data Toronto Explorer"
     )
   )
 }

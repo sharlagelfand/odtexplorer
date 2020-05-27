@@ -7,7 +7,7 @@
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
-mod_about_ui <- function(id){
+mod_about_ui <- function(id) {
   ns <- NS(id)
   tabItem(
     "about",
@@ -23,6 +23,6 @@ mod_about_ui <- function(id){
 #' About Server Function
 #'
 #' @noRd
-mod_about_server <- function(input, output, session){
+mod_about_server <- function(input, output, session) {
   ns <- session$ns
 }
